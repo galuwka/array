@@ -51,7 +51,7 @@ for(var i=fib.length; i<10; i++) {
     fib[i] = fib[i-2] + fib[i-1];
 }
 console.log(fib);*/
-function fibRecursive(n, a, b) {
+/*function fibRecursive(n, a, b) {
     var a=1;
     var b=0;
   if (n === 0) {
@@ -61,4 +61,30 @@ function fibRecursive(n, a, b) {
   }
 }
 console.log(fibRecursive(2,3,4));
+
+var pif=[],i,j;
+for(i=0;i<10;i++){
+	pif[i] = [];
+	for(j=0;j<10;j++){
+		pif[i][j] = (i + 1) * (j + 1);
+	}
+}
+
+for(i=0;i<=10;i++){
+console.log(pif[i])
+}*/
+var a=[1,22,5,8,12,0,7];
+var i,j,x;
+for(i=0;i<a.length;i++){
+    for(j=a.length-1;j>i;j--){
+        if(a[j-1]>a[j]){
+            x=a[j-1];
+            a[j-1]=a[j];
+            a[j]=x;
+          
+        }
+      
+    }
+    console.log(a[j])
+}
 
